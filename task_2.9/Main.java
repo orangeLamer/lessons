@@ -3,7 +3,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-	// write your code here
     	int chek_num = 5;
     	boolean b_bul = true;
 
@@ -13,18 +12,14 @@ public class Main {
 
     		if (chek_num == arr[i]) {
 
-
-				System.out.println("да");
-
-				b_bul = false;
-			}
+			System.out.println("да");
+			b_bul = false;
+			
+		}
     	}
 
-    	if (b_bul) {
-    		
-    		System.out.println("нет");
-    	}
-
+    	if (b_bul) System.out.println("нет");
+    	
     }
 }
 
