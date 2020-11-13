@@ -3,30 +3,20 @@ public class Main {
     public static void main(String[] args) {
 
         int num[] = {4,2,6,2,65};
+        
 
-        print_arr(num.length,num);
-
-
+        print_my_arr (num.length, num);
     }
 
+    static void print_my_arr(int a,int[] my_arr){
+        if (a == 0) return;
+            int b = (my_arr.length) - a;
+            System.out.print(my_arr[b] + " | " );
+      
+            print_my_arr(a - 1, my_arr); 
+        
+        // :-)
 
-        static int print_arr(int a, int[] array){
-              // int b;
-            if (a == 0){
-            
-            //if (a == (array.length - 1)){
-            // насколько часто может понадобиться рекурсия? 
-            // может надо еще потренироваться на примерах из реальных задач????? 
-
-                return a = 0;
-        } else {
-                a-=1;
-                // a++; //????????
-                int b = array[a];
-                System.out.print(" "+ b);
-                print_arr(a ,array);
-                return a;
-            }
     }
 
 }
